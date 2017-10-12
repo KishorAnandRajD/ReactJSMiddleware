@@ -1,0 +1,14 @@
+import {FETCH_USERS} from './types';
+
+// Constant values for users
+export function fetchUsers(){
+  console.log("inside actions index file fetchUsers function")
+  return{
+    type:FETCH_USERS,
+    payload: [
+      {name:'Jane'},
+      {name:'Alex'},
+      {name:'Jim'}
+    ]
+  };
+}
